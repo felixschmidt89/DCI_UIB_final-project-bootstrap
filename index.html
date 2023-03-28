@@ -1,18 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="author" content="Felix Schmidt"/>
-    <meta name="description" content="Web Dev Student Felix Schmidt's portfolio webpage - the final project of the first module (user Interface basics) on his journey at DCI of becoming a web developer."/>
-    <meta name="robots" content="follow"/>
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="main.css"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Felix Schmidt" />
+    <meta
+      name="description"
+      content="Web Dev Student Felix Schmidt's portfolio webpage - the final project of the first module (user Interface basics) on his journey at DCI of becoming a web developer."
+    />
+    <meta name="robots" content="follow" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <title>Felix Schmidt - Web Dev Student at DCI - final project 'User Interface Basic' module </title>
+    <title>
+      Felix Schmidt - Web Dev Student at DCI - final project 'User Interface
+      Basic' module
+    </title>
   </head>
 
-  
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-primary text-light sticky-top d-flex justify-content-end"
+      >
+        <div class="container-fluid">
+          <a id="brand-tiny" class="navbar-brand text-light" href="#"
+            >Felix Schmidt</a
+          >
+          <a id="brand-small" class="navbar-brand text-light" href="#"
+            >FS - Web Dev Student</a
+          >
+          <a id="brand-normal" class="navbar-brand text-light" href="#"
+            >Felix Schmidt - Web Dev Student</a
+          >
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item ms-auto">
+                <a
+                  class="nav-link text-light fw-semibold text-decoration-underline"
+                  href="#"
+                  >DE</a
+                >
+              </li>
 
-
+              <li class="nav-item ms-auto">
+                <a class="nav-link text-light" href="#about-me">About me</a>
+              </li>
+              <li class="nav-item ms-auto">
+                <a class="nav-link text-light" href="#about-project"
+                  >About this project</a
+                >
+              </li>
+              <li class="nav-item ms-auto">
+                <a class="nav-link text-light" href="#">CV</a>
+              </li>
+              <li class="nav-item ms-auto">
+                <a class="nav-link text-light" href="#">Impressum</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="container text-center pt-1">
+        Hi! I'm Felix - a Web Dev Student at DCI.
+      </h1>
+      <div id="picture-container" class="container mb-2">
+        <img
+          src="./images/picture-mobile.webp"
+          id="picture-mobile"
+          class="img-fluid"
+          alt="Web Dev Student Felix Schmidt standing next to Bode-Museum Berlin with the Fernsehturm (Television tower) behind him."
+        />
+        <img
+          src="./images/picture-tablet.webp"
+          id="picture-tablet"
+          class="img-fluid"
+          alt="Web Dev Student Felix Schmidt standing next to Bode-Museum Berlin with the Fernsehturm (Television tower) behind him."
+        />
+        <img
+          src="./images/picture-desktop.webp"
+          id="picture-desktop"
+          class="img-fluid"
+          alt="Web Dev Student Felix Schmidt standing next to Bode-Museum Berlin with the Fernsehturm (Television tower) behind him."
+        />
+      </div>
+      <section class="accordion container border shadow-sm pt-3 pb-3 mb-3 bg-white rounded" id="accordion">
+        <h2 id="about-me">About me</h2>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Recent role
+            </button>
+          </h3>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                I've spent my professional life (7 years) in different roles
+                focusing on WEB software at dynamic, fast-growing and
+                ever-changing tech startups. In my recent role as POS expert
+                (4.5 years) at Treatwell's product team, it was my mission to
+                lay the ground for gaining and retaining legal compliance of a
+                Point of Sale software module in 10 different western European
+                markets. In essence, I researched the vast variety of legal
+                requirements in a market, broke them down and owned meeting all
+                non-technical ones while at the same time conveying technical
+                requirements to the dev team and closely consulting them on
+                delivery. Becoming the go-to-guy for all newly emerged POS
+                related topics and queries and occasionally stepping in as
+                Product Manager, I acquired special knowledge about
+                fiscalisation across Europe, slowly realizing that I highly
+                enjoy the collaborated work and its constant challenges and I'd
+                rather acquire generic web development skills to continue
+                working in this field without being bound to a single - let's
+                face it - rather uninspiring topic.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Career change
+            </button>
+          </h3>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Consequently, and since I'm a quick learner, have proven to be a
+                problem solver, good at mathematics and logics, excel at hours
+                of focused, autonomous & challenging work paying great attention
+                to detail and can tell from experience, that software
+                development is where I want to work, I had decided to aim for a
+                career change: First go on a sabbatical year and then move from
+                product to tech and acquire what I'm lacking - coding skills -
+                to not only work with web developers but become one myself.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container border shadow-sm pt-3 pb-1 mb-3 bg-white rounded">
+        <h2 id="about-project">About this project</h2>
+        <p>
+          After having built <a href="https://uib-final-project.netlify.app/" target="_blank">this
+            website</a> from scratch I've decided to create a second version of it styled from scratch using
+          bootstrap. This is to showcase that besides having learned how to design & build websites <b>HTML</b>, <b>CSS</b> and <b>Sass</b> I've also learned the
+          basics of <b>Bootstrap</b> during the very first technical module (<b>'User
+          Interface Basic'</b>) as part of the Web Development Course at <a href="https://digitalcareerinstitute.org/" target="_blank" title="Digital Career Institute">DCI</a></p>
+      </section>
+    </main>
+  </body>
+</html>

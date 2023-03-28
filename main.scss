@@ -1,1 +1,75 @@
+// Custom bootstrap colors
+
+$light: #fcfaf9;
+$primary: #2d3047;
+$dark: #50537c;
+$secondary-color: #388697;
+$info: #03c9a1;
+$warning: #e55381;
+
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+// Custom colors
+body {background-color: $light;} 
+h1, h2, h3 {color: $info; text-align: center;}
+
+// navbar
+
+@media screen and (max-width: 299px) {
+    #brand-small, #brand-normal {
+     display: none;
+    }
+    #brand-tiny {
+        display: flex;
+    }
+  }
+
+@media (min-width:300px) and (max-width: 576px) {
+    #brand-small {
+     display: flex;
+    }
+    #brand-normal, #brand-tiny {
+        display: none;
+    }
+  }
+
+@media screen and (min-width: 577px) {
+    #brand-small, #brand-tiny {
+     display: none;
+    }
+    #brand-normal {
+        display: flex;
+    }
+  }
+
+// image
+
+#picture-container{display: flex; justify-content: center;}
+#picture-mobile, #picture-tablet, #picture-desktop {height: 50vh; object-fit: cover; background-position: center 35%;}
+
+@media screen and (max-width: 576px) {
+    #picture-mobile {
+     display: flex;
+    }
+    #picture-tablet, #picture-desktop {
+        display: none;
+    }
+  }
+
+@media (min-width: 577px) and (max-width:991px){
+    #picture-tablet {
+     display: flex;
+    }
+    #picture-mobile, #picture-desktop {
+        display: none;
+    }
+  }
+
+@media (min-width: 991px) {
+    #picture-desktop {
+     display: flex;
+    }
+    #picture-tablet, #picture-mobile {
+        display: none;
+    }
+  }
