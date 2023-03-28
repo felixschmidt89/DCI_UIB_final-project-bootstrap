@@ -1,0 +1,15 @@
+{
+  "name": "dci_uib_final-project-bootstrap",
+  "version": "1.0.0",
+  "description": "After having built [this website](https://uib-final-project.netlify.app/) from scratch I've decided to create a second version of it styled from scratch using bootstrap.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha2"
+  }
+}
