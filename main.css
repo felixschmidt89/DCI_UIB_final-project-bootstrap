@@ -11995,9 +11995,12 @@ body {
   background-color: #fcfaf9;
 }
 
+h1, .h1, h2, .h2 {
+  text-align: center;
+}
+
 h1, .h1, h2, .h2, h3, .h3 {
   color: #03c9a1;
-  text-align: center;
 }
 
 @media screen and (max-width: 299px) {
@@ -12024,6 +12027,14 @@ h1, .h1, h2, .h2, h3, .h3 {
     display: flex;
   }
 }
+h1, .h1 {
+  margin-top: 65px;
+}
+
+h2, .h2 {
+  scroll-margin-top: 65px;
+}
+
 #picture-container {
   display: flex;
   justify-content: center;
@@ -12059,4 +12070,89 @@ h1, .h1, h2, .h2, h3, .h3 {
   #picture-tablet, #picture-mobile {
     display: none;
   }
+}
+@media (min-width: 2600px) {
+  #picture-desktop {
+    height: 30vh;
+  }
+}
+footer {
+  height: 56px;
+}
+
+.cv-container {
+  display: grid;
+  grid-template-areas: "head" "education" "experience" "skills";
+}
+
+.cv-head {
+  grid-area: head;
+}
+
+.cv-education {
+  grid-area: education;
+  margin-top: 0.5rem;
+}
+
+.cv-experience {
+  grid-area: experience;
+  margin-top: 0.5rem;
+}
+
+.cv-skills {
+  grid-area: skills;
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 577px) {
+  #cv-contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.1rem 1rem;
+  }
+  .cv-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "head head" "experience education" "experience skills" "experience .";
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #cv-contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cv-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "head head head" "education experience experience" "skills experience experience";
+    gap: 20px 100px;
+  }
+}
+#cv-contact div span {
+  margin-right: 0.3rem;
+}
+#cv-contact a {
+  text-decoration: none;
+}
+
+.cv-bulletpoint {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.cv-period {
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 0rem !important;
+}
+
+.cv-description {
+  margin-left: 1rem;
+  position: relative;
+  margin-top: 0.3rem !important;
+}
+
+p {
+  margin-bottom: 0rem !important;
 }
