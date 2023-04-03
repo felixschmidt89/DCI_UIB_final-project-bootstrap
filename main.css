@@ -12136,6 +12136,10 @@ footer {
   text-decoration: none;
 }
 
+.cv-head {
+  margin-bottom: 0.6rem !important;
+}
+
 .cv-bulletpoint {
   font-weight: 600;
   margin-top: 0rem;
