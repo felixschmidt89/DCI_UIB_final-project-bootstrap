@@ -12136,15 +12136,21 @@ footer {
   text-decoration: none;
 }
 
+.cv-skills {
+  margin-top: 1.25rem !important;
+  margin-bottom: 0rem;
+}
+
 .cv-bulletpoint {
   font-weight: 600;
-  margin-top: 0.1rem;
+  margin-top: 0rem;
+  margin-bottom: 0.1rem;
 }
 
 .cv-period {
   font-weight: 300;
   font-style: italic;
-  margin-top: 0rem !important;
+  margin-bottom: 0.2rem !important;
 }
 
 .cv-description {
@@ -12152,6 +12158,7 @@ footer {
   margin-left: 1rem;
   position: relative;
   margin-top: 0rem !important;
+  margin-bottom: 0.6rem !important;
 }
 
 p {
