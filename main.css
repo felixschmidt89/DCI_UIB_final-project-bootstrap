@@ -12138,7 +12138,7 @@ footer {
 
 .cv-bulletpoint {
   font-weight: 600;
-  margin-top: 1rem;
+  margin-top: 0.1rem;
 }
 
 .cv-period {
@@ -12151,7 +12151,7 @@ footer {
   color: #388697;
   margin-left: 1rem;
   position: relative;
-  margin-top: 0.3rem !important;
+  margin-top: 0rem !important;
 }
 
 p {
