@@ -12136,11 +12136,6 @@ footer {
   text-decoration: none;
 }
 
-.cv-skills {
-  margin-top: 1.25rem !important;
-  margin-bottom: 0rem;
-}
-
 .cv-bulletpoint {
   font-weight: 600;
   margin-top: 0rem;
@@ -12163,4 +12158,8 @@ footer {
 
 p {
   margin-bottom: 0rem !important;
+}
+
+.cv h3, .cv .h3 {
+  margin-top: 0.5rem;
 }
